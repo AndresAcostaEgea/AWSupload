@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Titanic Survival Predictor</title>
+</head>
+<body>
+    <h1>Survive the Titanic Challange</h1>
+    <h3>Welcome aboard the Titanic!</h3>
+    <p>Input the details of a made up person, and let the computer predict (using ML) if you would have suvived.</p> 
+
+    <form action="{% url 'resultPage' %}">
+        <p>pclass</p>
+        <input type="text" name="pclass">
+        <p>sex</p>
+        <input type="text" name="sex">
+        <p>age</p>
+        <input type="text" name="age">
+        <p>sibsp</p>
+        <input type="text" name="sibsp">
+        <p>parents and childen</p>
+        <input type="text" name="parch">
+        <p>fare</p>
+        <input type="text" name="fare">
+        <p>embarked</p>
+        <input type="text" name="embarked">
+        <p>title</p>
+        <input type="text" name="title">
+        <br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
